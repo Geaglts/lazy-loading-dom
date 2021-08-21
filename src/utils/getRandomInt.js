@@ -1,3 +1,3 @@
 export function generateRandomInt(limit) {
-  return Math.floor(Math.random() * limit);
+  return Math.round(Math.random() * limit);
 }

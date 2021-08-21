@@ -1,11 +1,12 @@
 import './styles/main.scss';
-import { Img } from './components/Img';
+import { ImageElement } from './containers/ImgElement';
 
 function main() {
   const app = document.getElementById('app');
   const button = document.querySelector('#new-image');
+
   button.addEventListener('click', () => {
-    const imageElement = Img();
+    const imageElement = ImageElement();
     app.appendChild(imageElement);
   });
 }
