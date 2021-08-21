@@ -1,0 +1,63 @@
+$red: #e94f37;
+$blue: #3f88c5;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  line-height: 1;
+  border: none;
+}
+
+@mixin button($bg, $color) {
+  background-color: $bg;
+  padding: 0.6em 0.8em;
+  border-radius: 0.2em;
+  color: $color;
+  font-size: 12pt;
+  transition: transform 400ms ease-out;
+  cursor: pointer;
+
+  &:hover {
+    transition: transform 250ms ease-in;
+    will-change: transform;
+    transform: scale(1.08);
+  }
+}
+
+header {
+  text-align: center;
+
+  p {
+    font-size: 14pt;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    color: $blue;
+  }
+
+  h1 {
+    font-size: 38pt;
+    color: $red;
+    margin-bottom: 20px;
+  }
+}
+
+main {
+  text-align: center;
+  width: 80%;
+  height: 255px;
+  margin: 0 auto;
+
+  p {
+    padding: 0.6em 0;
+  }
+
+  button {
+    margin-top: 5px;
+    @include button($red, white);
+  }
+}
