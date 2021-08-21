@@ -24,7 +24,6 @@ $blue: #3f88c5;
 
   &:hover {
     transition: transform 250ms ease-in;
-    will-change: transform;
     transform: scale(1.08);
   }
 }
