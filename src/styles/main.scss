@@ -77,9 +77,16 @@ main {
       overflow: hidden;
       box-shadow: 2px 4px 10px rgba($dark, 0.1);
 
-      .image {
-        width: 100%;
-        transition: transform 400ms ease;
+      img {
+        &.image {
+          width: 100%;
+          transition: transform 400ms ease;
+        }
+
+        &.blur {
+          min-height: 200px;
+          background-color: rgba($dark, 0.2);
+        }
 
         &:hover {
           cursor: pointer;
