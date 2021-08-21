@@ -1,5 +1,8 @@
 $red: #e94f37;
 $blue: #3f88c5;
+$dark: #393e41;
+$white: #f6f7eb;
+$green: #44bba4;
 
 * {
   margin: 0;
@@ -57,6 +60,6 @@ main {
 
   button {
     margin-top: 5px;
-    @include button($red, white);
+    @include button($red, $white);
   }
 }
