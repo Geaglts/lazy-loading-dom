@@ -4,7 +4,9 @@ const isIntersecting = (entry) => {
 
 const action = (entry) => {
   const node = entry.target;
-  console.log('Aqui ando perro');
+  const image = node.firstChild;
+  const url = image.dataset.src;
+  image.src = url;
   observer.unobserve(node);
 };
 

@@ -2,7 +2,7 @@ import { getImgUrl } from '../utils/getImgUrl';
 
 export function Img() {
   const img = document.createElement('img');
-  img.src = getImgUrl();
   img.classList.add('image');
+  img.dataset.src = getImgUrl();
   return img;
 }
