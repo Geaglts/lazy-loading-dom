@@ -1,4 +1,4 @@
-const stats = {
+export const stats = {
   totalImages: 0,
   loadedImages: 0,
 };

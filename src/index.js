@@ -1,6 +1,6 @@
 import './styles/main.scss';
 import { ImageElement } from './containers/ImgElement';
-import { registerImage } from './utils/lazy';
+import { registerImage, stats } from './utils/lazy';
 
 function main() {
   let app = document.getElementById('app');
@@ -15,6 +15,8 @@ function main() {
 
   removeImages.addEventListener('click', () => {
     // [...app.childNodes].forEach((child) => child.remove());
+    stats.loadedImages = 0;
+    stats.totalImages = 0;
     app.remove();
     const main = document.querySelector('main');
     const newApp = document.createElement('div');
