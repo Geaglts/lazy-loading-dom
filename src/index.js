@@ -1,5 +1,6 @@
 import './styles/main.scss';
 import { ImageElement } from './containers/ImgElement';
+import { registerImage } from './utils/lazy';
 
 function main() {
   const app = document.getElementById('app');
@@ -8,6 +9,7 @@ function main() {
   button.addEventListener('click', () => {
     const imageElement = ImageElement();
     app.appendChild(imageElement);
+    registerImage(imageElement);
   });
 }
 
